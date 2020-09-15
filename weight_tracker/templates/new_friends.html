@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container mx-auto w-75">
+    <h2 class="text-center mt-3">You Can Make Friends Here 😄</h2>
+    {% if new_friends %}
+    {{ new_friends }}
+    {% else %}
+    <h6 class="text-center mt-5">No new friends can be added 😉</h6>
+    {% endif %}
+</div>
+{% endblock %}

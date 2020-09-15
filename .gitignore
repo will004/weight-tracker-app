@@ -1,0 +1,7 @@
+__pycache__/
+.vscode/
+migrations/
+
+.DS_Store
+.flaskenv
+*.py[cod]

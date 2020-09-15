@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container mx-auto w-75">
+    <h2 class="text-center mt-3">Your Friends</h2>
+    {% if friends %}
+    {{ friends }}
+    {% else %}
+    <h6 class="text-center mt-5">You have no friends 😢</h6>
+    {% endif %}
+    <a href="{{ url_for('new_friends') }}" class="btn btn-primary float-right">Search New Friends</a>
+</div>
+{% endblock %}
